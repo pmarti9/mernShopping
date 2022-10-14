@@ -4,21 +4,22 @@
   "description": "Shopping list built with the Mern Stack",
   "main": "server.js",
   "scripts": {
-    "client-install" : "npm install --prefix client",
-    "start" : "node server.js",
-    "server" : "nodemon server.js",
-    "client" : "npm start --prefix client",
-    "dev" : "concurrently \"npm run server\" \"npm run client \"",
-    "heroku-postbuild" : "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-    
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client \"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Parker Martin",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.2",
+    "bcryptjs": "^2.4.3",
     "concurrently": "^7.0.0",
+    "config": "^3.3.7",
     "cors": "^2.8.5",
     "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.3"
   },
   "devDependencies": {
